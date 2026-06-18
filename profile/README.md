@@ -2,23 +2,22 @@
 
 # Aquifer Labs
 
-**Open infrastructure for AI‑agent memory and orchestration.**
+**Open infrastructure for AI‑agent memory control.**
 
-An *aquifer* is where hidden water is stored, filtered, and drawn up only when needed — our
-metaphor for agent context: persistent, clean, and available on demand, without flooding the
-prompt.
+An *aquifer* is where water is stored under pressure and rises without pumping when a well reaches
+it — our metaphor for agent context: the right knowledge surfaces automatically, without flooding
+the prompt.
 
 ## Projects
 
-- **[brunnr](https://github.com/aquifer-labs/brunnr)** — *the well your agents drink from.* A
-  Rust, MCP‑first system for multi‑agent **context orchestration and memory**: pluggable backends
-  (files / sqlite‑vec / Qdrant), short/long‑term memory, optional master·worker·judge
-  orchestration, and self‑repair across context compaction. Apache‑2.0.
-
-More wells to come — components split into sibling repos under this org as they mature.
+- **[artesian](https://github.com/aquifer-labs/artesian)** — *memory control for AI agents.* A
+  Rust, MCP‑first system that layers a **control plane** over any retrieval store: bounded
+  committed context, qualify‑gate, pluggable backends (files / sqlite‑vec / Qdrant), hybrid
+  retrieval (~1 k tokens/query), optional master·worker·judge orchestration, and self‑repair
+  across context compaction. Apache‑2.0.
 
 ## Principles
 
-`non‑intrusive` · `MCP‑first` · `Rust` · `pluggable backends` · `open (Apache‑2.0)`
+`memory control` · `non‑intrusive` · `MCP‑first` · `Rust` · `pluggable backends` · `open (Apache‑2.0)`
 
-> Use as little or as much as you want: just memory, or the full agent loop.
+> Use as little or as much as you want: just retrieval, or the full agent loop with a qualify gate.
