@@ -15,6 +15,7 @@ the prompt.
   committed context, qualify‑gate, pluggable backends (files / sqlite‑vec / Qdrant), hybrid
   retrieval (~1 k tokens/query), optional master·worker·judge orchestration (wellfield teams),
   autonomous run‑until‑done loops, and self‑repair across context compaction. Apache‑2.0.
+  📖 **[Documentation »](https://aquifer-labs.github.io/artesian/)**
 - **[ocf](https://github.com/aquifer-labs/ocf)** — *Open Cognitive Format.* A portable snapshot of
   what an agent holds in force right now — bounded committed working state + a qualify log — so any
   runtime can **resume** rather than re‑retrieve. Composes with PAM / AMP / files; **artesian** is
@@ -28,6 +29,8 @@ the prompt.
 ```sh
 brew install aquifer-labs/tap/artesian
 ```
+
+Then follow the **[documentation](https://aquifer-labs.github.io/artesian/)** to wire it into your agent.
 
 ## Principles
 
