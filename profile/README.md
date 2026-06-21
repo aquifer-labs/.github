@@ -15,6 +15,10 @@ the prompt.
   committed context, qualify‑gate, pluggable backends (files / sqlite‑vec / Qdrant), hybrid
   retrieval (~1 k tokens/query), optional master·worker·judge orchestration, and self‑repair
   across context compaction. Apache‑2.0.
+- **[ocf](https://github.com/aquifer-labs/ocf)** — *Open Cognitive Format.* A portable snapshot of
+  what an agent holds in force right now — bounded committed working state + a qualify log — so any
+  runtime can **resume** rather than re‑retrieve. Composes with PAM / AMP / files; **artesian** is
+  the reference implementation. CC‑BY‑4.0 / Apache‑2.0.
 
 ## Principles
 
